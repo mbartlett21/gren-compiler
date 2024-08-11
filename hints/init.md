@@ -7,9 +7,9 @@ It just creates an `gren.json` file and a `src/` directory for your code.
 
 ## What is `gren.json`?
 
-This file describes your project. It lists all of the packages you depend upon, so it will say the particular version of [`gren/core`](https://package.gren-lang.org/packages/gren/core/latest/) and [`gren/html`](https://package.gren-lang.org/packages/gren/html/latest/) that you are using. It makes builds reproducible! You can read a bit more about it [here](https://github.com/gren/compiler/blob/master/docs/gren.json/application.md).
+This file describes your project. It lists all of the packages you depend upon, so it will say the particular version of [`gren-lang/core`](https://packages.gren-lang.org/packages/gren-lang/core/latest/) and [`gren-lang/html`](https://packages.gren-lang.org/packages/gren-lang/html/latest/) that you are using. It makes builds reproducible! You can read a bit more about it [here](https://github.com/gren-lang/compiler/blob/master/docs/gren.json/application.md).
 
-You should generally not edit it by hand. It is better to add new dependencies with commands like `gren install gren/http` or `gren install gren/json`.
+You should generally not edit it by hand. It is better to add new dependencies with commands like `gren install gren-lang/http` or `gren install gren-lang/json`.
 
 
 ## What goes in `src/`?

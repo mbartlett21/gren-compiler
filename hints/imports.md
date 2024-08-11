@@ -9,7 +9,7 @@ When getting started with Gren, it is pretty common to have questions about how 
 
 An Gren file is called a **module**. To access code in other files, you need to `import` it!
 
-So say you want to use the [`div`](http://package.gren-lang.org/packages/gren-lang/html/latest/Html#div) function from the [`gren-lang/html`](http://package.gren-lang.org/packages/gren-lang/html/latest) package. The simplest way is to import it like this:
+So say you want to use the [`div`](http://packages.gren-lang.org/packages/gren-lang/html/latest/Html#div) function from the [`gren-lang/html`](http://packages.gren-lang.org/packages/gren-lang/html/latest) package. The simplest way is to import it like this:
 
 ```gren
 import Html
@@ -21,7 +21,7 @@ main =
 After saying `import Html` we can refer to anything inside that module as long as it is *qualified*. This works for:
 
   - **Values** &mdash; we can refer to `Html.text`, `Html.h1`, etc.
-  - **Types** &mdash; We can refer to [`Attribute`](http://package.gren-lang.org/packages/gren-lang/html/latest/Html#Attribute) as `Html.Attribute`.
+  - **Types** &mdash; We can refer to [`Attribute`](http://packages.gren-lang.org/packages/gren-lang/html/latest/Html#Attribute) as `Html.Attribute`.
 
 So if we add a type annotation to `main` it would look like this:
 
@@ -33,7 +33,7 @@ main =
   Html.div [] []
 ```
 
-We are referring to the [`Html`](http://package.gren-lang.org/packages/gren-lang/html/latest/Html#Html) type, using its *qualified* name `Html.Html`. This can feel weird at first, but it starts feeling natural quite quickly!
+We are referring to the [`Html`](http://packages.gren-lang.org/packages/gren-lang/html/latest/Html#Html) type, using its *qualified* name `Html.Html`. This can feel weird at first, but it starts feeling natural quite quickly!
 
 > **Note:** Modules do not contain other modules. So the `Html` module *does not* contain the `Html.Attributes` module. Those are separate names that happen to have some overlap. So if you say `import Html` you *do not* get access to `Html.Attributes.style`. You must `import Html.Attributes` module separately.
 
@@ -52,7 +52,7 @@ main =
   Html.div [ A.style "color" "red" ] [ Html.text "Hello!" ]
 ```
 
-Saying `import Html.Attributes as A` lets us refer to any value or type in `Html.Attributes` as long as it is qualified with an `A`. So now we can refer to [`style`](http://package.gren-lang.org/packages/gren-lang/html/latest/Html-Attributes#style) as `A.style`.
+Saying `import Html.Attributes as A` lets us refer to any value or type in `Html.Attributes` as long as it is qualified with an `A`. So now we can refer to [`style`](http://packages.gren-lang.org/packages/gren-lang/html/latest/Html-Attributes#style) as `A.style`.
 
 
 <br>

@@ -122,7 +122,7 @@ So now we are back to the two modules we wanted, but we have data structures tha
 
 Now say there are actually a ton of functions and values in the `Comment` and `User` modules. Combining them into one does not seem like a good strategy. Instead you can create a *third* module that just has the shared types and functions. Let’s pretend we call that third module `GoodCombination`. So rather than having `Comment` and `User` depend on each other, they now both depend on `GoodCombination`. We broke our cycle!
 
-**This strategy is less common.** You generally want to keep the core `type` of a module with all the functions that act upon it directly, so separating a `type` from everything else is a bad sign. So maybe there is a `User` module that contains a bunch of helper functions, but you *use* all those helper functions in a bunch of other modules that interact with users in various ways. In that scenario, it is still more sophisticated than “just throw the types in a module together” and hope it turns out alright.
+**This strategy is less common.** You generally want to keep the core `type` of a module with all the functions that act upon it directly, so separating a `type` from everything else is a bad sign. So maybe there is a `User` module that contains a bunch of helper functions, but you *use* all those helper functions in a bunch of other modules that interact with users in various ways. In that scenario, it is still more sophisticated than “just throw the types in a module together” and hope it turns out alright.
 
 
 ## 3. Use Type Variables

@@ -50,7 +50,7 @@ The same can be done with definitions and custom types:
 "Hey again!" : String
 ```
 
-When you run `gren repl` in a project with an [`gren.json`](https://github.com/gren/compiler/blob/master/docs/gren.json/application.md) file, you can import any module available in the project. So if your project has an `gren/html` dependency, you could say:
+When you run `gren repl` in a project with an [`gren.json`](https://github.com/gren-lang/compiler/blob/master/docs/gren.json/application.md) file, you can import any module available in the project. So if your project has an `gren-lang/html` dependency, you could say:
 
 ```gren
 > import Html exposing (Html)

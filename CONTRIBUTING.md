@@ -3,13 +3,13 @@
 Before starting to work on a feature or bug fix for Gren, it might be a good idea
 to check if the change you're intending to make is a good fit for the project.
 
-We use the `Help Wanted` tag on github issues to indicate that a PR would be
+We use the `Help Wanted` tag on GitHub issues to indicate that a PR would be
 welcome. If you cannot find an issue for the change you're intending to make,
 head over to the Discord server (https://discord.gg/J8aaGMfz).
 
 We're a friendly bunch, so don't be afraid to drop in to say hi or ask questions!
 
-We also like to talk things through before commiting to a change, so it's a good
+We also like to talk things through before committing to a change, so it's a good
 idea to bring up an idea on Discord before making a PR.
 
 [forum-channel-what]: https://support.discord.com/hc/en-us/articles/6208479917079-Forum-Channels-FAQ#h_01G69FJQWTWN88HFEHK7Z6X79N
