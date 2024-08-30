@@ -2,7 +2,7 @@
 
 The built-in comparison operators work on a fixed set of types, like `Int` and `String`. That covers a lot of cases, but what happens when you want to compare custom types?
 
-This page aims to catalog these scenarios and offer alternative paths that can get you unstuck.
+This page aims to catalogue these scenarios and offer alternative paths that can get you unstuck.
 
 
 ## Wrapped Types
@@ -91,8 +91,3 @@ trafficLightToInt trafficLight =
 ```
 
 This is really straight-forward while avoiding questions like “is `Green` less than or greater than `Red`?”
-
-
-## Something else?
-
-If you have some other situation, please tell us about it [here](https://github.com/gren/error-message-catalog/issues). That is a log of error messages that can be improved, and we can use the particulars of your scenario to add more advice on this page!
